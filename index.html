@@ -337,11 +337,14 @@
             background: linear-gradient(to right, rgba(10,6,2,0.78) 0%, rgba(10,6,2,0.38) 55%, rgba(10,6,2,0.08) 100%);
         }
 
-                        .hero-content {
+                                .hero-content {
             position: relative;
             z-index: 2;
-            max-width: 700px;
-            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            gap: 4rem;
+            padding: 0 5%;
         }
 
         .hero-eyebrow {
@@ -387,6 +390,21 @@
             display: flex;
             gap: 14px;
             flex-wrap: wrap;
+        }
+
+
+        .hero-left {
+            flex: 0 0 auto;
+        }
+
+        .hero-right {
+            flex: 1;
+            max-width: 420px;
+            padding-bottom: 0.5rem;
+        }
+
+        .hero-left h1 {
+            margin-bottom: 0;
         }
 
         /* ===== SCHMERZ / PAIN SECTION ===== */
@@ -1791,15 +1809,25 @@
             section { padding: 4rem 0; }
 
             .hero { padding: 0 0 3.5rem; }
-                    .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 700px;
-        }
+            .hero-content { flex-direction: column; gap: 1.5rem; padding: 0 1.5rem; }
+            .hero-right { max-width: 100%; }
                             .hero-content {
             position: relative;
             z-index: 2;
-            max-width: 700px;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            gap: 4rem;
+            padding: 0 5%;
+        }
+                                    .hero-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            gap: 4rem;
+            padding: 0 5%;
         }
 
             .offers-grid { grid-template-columns: 1fr; }
@@ -1877,13 +1905,16 @@
     </div>
     <div class="hero-overlay"></div>
     <div class="container hero-content">
-        <div class="hero-eyebrow">Abschalten. Auftanken. Neustarten.</div>
-        <h1>Abschalten.<br>Auftanken.<br><em>Neustarten.</em></h1>
-        <p class="hero-sub" style="font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-light);font-weight:500;margin-bottom:0.75rem;">Für Unternehmer · Führungskräfte · Menschen in hoher Verantwortung</p>
-        <p class="hero-sub">Für Unternehmer, Führungskräfte und Menschen in hoher Verantwortung, die wieder klar denken, besser entscheiden und mit neuer Energie führen wollen.</p>
-        <div class="hero-ctas">
-            <a href="mailto:info@glueckssteiger.de" class="btn btn-primary">Jetzt kostenloses Erstgespräch vereinbaren</a>
-            <a href="#angebote" class="btn btn-outline">Mehr erfahren</a>
+        <div class="hero-left">
+            <h1>Abschalten.<br>Auftanken.<br><em>Neustarten.</em></h1>
+        </div>
+        <div class="hero-right">
+            <p class="hero-sub" style="font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-light);font-weight:500;margin-bottom:0.75rem;">Für Unternehmer · Führungskräfte · Menschen in hoher Verantwortung</p>
+            <p class="hero-sub">Für Unternehmer, Führungskräfte und Menschen in hoher Verantwortung, die wieder klar denken, besser entscheiden und mit neuer Energie führen wollen.</p>
+            <div class="hero-ctas">
+                <a href="mailto:info@glueckssteiger.de" class="btn btn-primary">Jetzt kostenloses Erstgespräch vereinbaren</a>
+                <a href="#angebote" class="btn btn-outline">Mehr erfahren</a>
+            </div>
         </div>
     </div>
 </section>
