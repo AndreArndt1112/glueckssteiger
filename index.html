@@ -310,11 +310,12 @@
         }
 
         /* ===== HERO ===== */
-        .hero {
+                .hero {
             position: relative;
             min-height: 100vh;
             display: flex;
             align-items: center;
+            justify-content: center;
             padding: 0;
             overflow: hidden;
         }
@@ -334,17 +335,15 @@
         .hero-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(to right, rgba(10,6,2,0.78) 0%, rgba(10,6,2,0.38) 55%, rgba(10,6,2,0.08) 100%);
+            background: linear-gradient(to bottom, rgba(10,6,2,0.45) 0%, rgba(10,6,2,0.55) 100%);
         }
 
-                                .hero-content {
+                                        .hero-content {
             position: relative;
             z-index: 2;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            gap: 4rem;
-            padding: 72px 5% 0;
+            text-align: center;
+            max-width: 800px;
+            padding: 0 2rem;
         }
 
         .hero-eyebrow {
@@ -381,8 +380,7 @@
             font-size: 1.05rem;
             font-weight: 300;
             line-height: 1.7;
-            color: rgba(255,255,255,0.72);
-            max-width: 450px;
+            color: rgba(255,255,255,0.82);
             margin-bottom: 2.5rem;
         }
 
@@ -390,23 +388,16 @@
             display: flex;
             gap: 14px;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
 
-        .hero-left {
-            flex: 0 0 auto;
-        }
-
-        .hero-right {
+.hero-right {
             flex: 1;
             max-width: 500px;
         }
 
-        .hero-left h1 {
-            margin-bottom: 0;
-        }
-
-        /* ===== SCHMERZ / PAIN SECTION ===== */
+/* ===== SCHMERZ / PAIN SECTION ===== */
         .pain-section {
             background: var(--wood-dark);
             padding: 6rem 0;
@@ -1807,26 +1798,35 @@
 
             section { padding: 4rem 0; }
 
-            .hero { padding: 0 0 3.5rem; }
-            .hero-content { flex-direction: column; gap: 1.5rem; padding: 0 1.5rem; }
-            .hero-right { max-width: 100%; }
-                            .hero-content {
+                    .hero {
             position: relative;
-            z-index: 2;
-            width: 100%;
+            min-height: 100vh;
             display: flex;
             align-items: center;
-            gap: 4rem;
-            padding: 72px 5% 0;
+            justify-content: center;
+            padding: 0;
+            overflow: hidden;
         }
-                                    .hero-content {
+                    .hero-content {
             position: relative;
             z-index: 2;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            gap: 4rem;
-            padding: 72px 5% 0;
+            text-align: center;
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+    .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+                                            .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            padding: 0 2rem;
         }
 
             .offers-grid { grid-template-columns: 1fr; }
@@ -1903,17 +1903,14 @@
         <img src="bilder/hero.jpg" alt="Almwiese in Reit im Winkl – Ausgangspunkt des Glückssteiger Intensiv-Programms" loading="eager" fetchpriority="high">
     </div>
     <div class="hero-overlay"></div>
-    <div class="container hero-content">
-        <div class="hero-left">
-            <h1>Abschalten.<br>Auftanken.<br><em>Neustarten.</em></h1>
-        </div>
-        <div class="hero-right">
-            <p class="hero-sub" style="font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-light);font-weight:500;margin-bottom:0.75rem;">Für Unternehmer · Führungskräfte · Menschen in hoher Verantwortung</p>
-            <p class="hero-sub">Für Unternehmer, Führungskräfte und Menschen in hoher Verantwortung, die wieder klar denken, besser entscheiden und mit neuer Energie führen wollen.</p>
-            <div class="hero-ctas">
-                <a href="mailto:info@glueckssteiger.de" class="btn btn-primary">Jetzt kostenloses Erstgespräch vereinbaren</a>
-                <a href="#angebote" class="btn btn-outline">Mehr erfahren</a>
-            </div>
+    <div class="hero-content">
+        <p class="hero-eyebrow-top">Für Unternehmer · Führungskräfte · Menschen in hoher Verantwortung</p>
+        <h1>Abschalten.<br>Auftanken.<br><em>Neustarten.</em></h1>
+        <div class="hero-divider"></div>
+        <p class="hero-sub">Wieder klar denken, besser entscheiden und mit neuer Energie führen –<br>bei einem Executive Retreat in den Alpen.</p>
+        <div class="hero-ctas">
+            <a href="mailto:info@glueckssteiger.de" class="btn btn-primary">Erstgespräch vereinbaren</a>
+            <a href="#angebote" class="btn btn-outline">Mehr erfahren</a>
         </div>
     </div>
 </section>
