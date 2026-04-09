@@ -335,14 +335,14 @@
         .hero-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(to bottom, rgba(10,6,2,0.45) 0%, rgba(10,6,2,0.55) 100%);
+            background: rgba(42,34,24,0.62);
         }
 
-                                        .hero-content {
+                                                .hero-content {
             position: relative;
             z-index: 2;
             text-align: center;
-            max-width: 800px;
+            max-width: 700px;
             padding: 0 2rem;
         }
 
@@ -368,7 +368,9 @@
 
         .hero h1 {
             color: var(--white);
-            margin-bottom: 1.5rem;
+            font-size: clamp(38px, 5.5vw, 64px);
+            letter-spacing: 2px;
+            margin-bottom: 0;
         }
 
         .hero h1 em {
@@ -1807,25 +1809,25 @@
             padding: 0;
             overflow: hidden;
         }
-                    .hero-content {
+                            .hero-content {
             position: relative;
             z-index: 2;
             text-align: center;
-            max-width: 800px;
+            max-width: 700px;
             padding: 0 2rem;
         }
-    .hero-content {
+            .hero-content {
             position: relative;
             z-index: 2;
             text-align: center;
-            max-width: 800px;
+            max-width: 700px;
             padding: 0 2rem;
         }
-                                            .hero-content {
+                                                    .hero-content {
             position: relative;
             z-index: 2;
             text-align: center;
-            max-width: 800px;
+            max-width: 700px;
             padding: 0 2rem;
         }
 
@@ -1847,7 +1849,12 @@
         }
 
         @media (max-width: 480px) {
-            .hero h1 { font-size: 2.75rem; }
+            .hero h1 {
+            color: var(--white);
+            font-size: clamp(38px, 5.5vw, 64px);
+            letter-spacing: 2px;
+            margin-bottom: 0;
+        }
             h2 { font-size: 1.875rem; }
             .pain-grid { grid-template-columns: 1fr; }
             .was-images { height: 360px; }
@@ -1904,10 +1911,10 @@
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-        <p class="hero-eyebrow-top">Für Unternehmer · Führungskräfte · Menschen in hoher Verantwortung</p>
-        <h1>Abschalten.<br>Auftanken.<br><em>Neustarten.</em></h1>
+        <p class="hero-eyebrow-top">Executive Retreats in den Alpen</p>
+        <h1>Abschalten. Auftanken.<br><em>Neustarten.</em></h1>
         <div class="hero-divider"></div>
-        <p class="hero-sub">Wieder klar denken, besser entscheiden und mit neuer Energie führen –<br>bei einem Executive Retreat in den Alpen.</p>
+        <p class="hero-sub">Für Unternehmer und Führungskräfte, die wieder klar denken, besser entscheiden und mit neuer Energie führen wollen.</p>
         <div class="hero-ctas">
             <a href="mailto:info@glueckssteiger.de" class="btn btn-primary">Erstgespräch vereinbaren</a>
             <a href="#angebote" class="btn btn-outline">Mehr erfahren</a>
